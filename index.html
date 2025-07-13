@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikram Srinivasan's Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikram Srinivasan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about-anchor">About</a></li>
-                <li><a href="projects/index.html">Projects</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <div class="anchor" id="about-anchor"></div>
-            <div class="about-content">
-                <img src="images/vik.jpeg" alt="Vikram Srinivasan" class="profile-picture">
-                <h1>HI! I'M VIKRAM SRINIVASAN</h1>
-                <h2>Student - Engineer - Sports Nerd</h2>
-                <p>I am a Stanford student pursuing a Bachelor of Science in Symbolic Systems and a Master of Science in Computer Science. With a specialization in AI and Machine Learning, I am passionate about leveraging my technical skills to make a significant impact. In my free time, I am an enthusiastic sports fan, particularly of basketball and football. I enjoy applying data analytics to dominate my fantasy football leagues and spend countless hours watching NBA games on League Pass.</p>
-                <p>Check out my <a href="blog/index.html">blog</a> for my thoughts, especially on sports, and visit my <a href="projects/index.html">projects</a> page to see what I'm working on.</p>
-            </div>
-        </section>
-        <section id="contact">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/vikram-srin" target="_blank">LinkedIn</a></li>
-                <li><a href="src/resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://github.com/vik-srinivasan" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Vikram Srinivasan. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+  <header>
+    <nav class="nav-container">
+      <a href="#about" class="tab active">About</a>
+      <a href="projects/index.html" class="tab">Projects</a>
+      <a href="sports/index.html" class="tab">Sports</a>
+      <a href="#contact" class="tab">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <img src="images/vik.jpeg" alt="Vikram Srinivasan" class="profile-pic" />
+        <div class="about-text">
+          <h1>Hi, I’m Vikram Srinivasan</h1>
+          <p class="tagline">Student – Engineer – Sports Nerd</p>
+          <p>
+            I'm pursuing a BS in Symbolic Systems &amp; MS in CS at Stanford, specializing in AI/ML.
+            I love building AI tools that make life easier and more accessible for everyone.
+            In my free time you'll find me knee-deep in basketball analytics or dominating my
+            fantasy football leagues.
+          </p>
+          <p class="subnote">
+            You can find all my SWE &amp; AI/ML work on my
+            <a href="projects/index.html">Projects page</a>
+            or my sports analytics projects &amp; blogs on my
+            <a href="sports/index.html">Sports page</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/vikram-srin" target="_blank">LinkedIn</a>
+          <a href="src/resume.pdf" target="_blank">Resume</a>
+          <a href="https://github.com/vik-srinivasan" target="_blank">GitHub</a>
+        </div>
+        <form class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vikram Srinivasan</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

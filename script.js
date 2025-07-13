@@ -1,53 +1,44 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('nav ul li a');
+// Smooth scroll for anchor links
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.getAttribute('href').slice(1);
+    document.getElementById(id)
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+// Simple contact form validation
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', e => {
+  const [name, email, message] = ['name','email','message'].map(id =>
+    document.getElementById(id).value.trim()
+  );
+  if (!name || !email || !message) {
+    alert('Please fill out all fields.');
+    e.preventDefault();
+  }
+});
 
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        });
-    });
+// Auto‐activate the current tab more precisely
+const tabs = document.querySelectorAll('.nav-container .tab');
+const { pathname, hash } = window.location;  
+// e.g. pathname = "/projects/index.html" or "/" ; hash = "#about" or ""
 
-    // Form validation
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+tabs.forEach(tab => {
+  const href = tab.getAttribute('href');
 
-        if (name === '' || email === '' || message === '') {
-            alert('Please fill in all fields');
-            event.preventDefault();
-        }
-    });
-
-    // Image modal
-    const images = document.querySelectorAll('.project img');
-    const modal = document.createElement('div');
-    modal.id = 'modal';
-    document.body.appendChild(modal);
-
-    images.forEach(img => {
-        img.addEventListener('click', function() {
-            modal.classList.add('open');
-            const modalImg = document.createElement('img');
-            modalImg.src = this.src;
-            while (modal.firstChild) {
-                modal.removeChild(modal.firstChild);
-            }
-            modal.appendChild(modalImg);
-        });
-    });
-
-    modal.addEventListener('click', function() {
-        modal.classList.remove('open');
-    });
+  if (href.startsWith('#')) {
+    // for in‐page anchors, compare to location.hash
+    if (href === hash || (href === '#about' && pathname === '/')) {
+      tab.classList.add('active');
+    }
+  } else {
+    // for file links, compare full pathname suffix
+    // ensure trailing slash maps to root index
+    const fullPath = pathname.endsWith('/') ? '/index.html' : pathname;
+    if (fullPath.endsWith(href)) {
+      tab.classList.add('active');
+    }
+  }
 });

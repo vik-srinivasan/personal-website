@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Vikram Srinivasan's Portfolio</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Vikram Srinivasan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html#about-anchor">About</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project">
-                <img src="../images/project1.jpg" alt="Project 1">
-                <h2>Project Title 1</h2>
-                <p><!-- Describe your project here --></p>
-            </div>
-            <div class="project">
-                <img src="../images/project2.jpg" alt="Project 2">
-                <h2>Project Title 2</h2>
-                <p><!-- Describe your project here --></p>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Vikram Srinivasan. All rights reserved.</p>
-    </footer>
+  <header>
+    <nav class="nav-container">
+      <a href="../index.html#about" class="tab">About</a>
+      <a href="index.html" class="tab active">Projects</a>
+      <a href="../sports/index.html" class="tab">Sports</a>
+      <a href="../index.html#contact" class="tab">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section projects-section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="grid grid--2">
+
+          <!-- Geovision -->
+          <a href="https://github.com/vik-srinivasan/GeoGuessrCV" class="card" target="_blank" rel="noopener noreferrer">
+            <h3>Geovision: Image Geolocation with ViTs</h3>
+            <p>Fine-tuned Vision Transformer (ViT-B/16) and ResNet-50 on a 104-class country geolocation task achieving 88.3% top-5 accuracy. Built an end-to-end pipeline with Hugging Face Transformers and Datasets APIs; performed error analysis, class balancing, and hyperparameter tuning.</p>
+          </a>
+
+          <!-- RepWise -->
+          <a href="https://github.com/vik-srinivasan/RepWise" class="card" target="_blank" rel="noopener noreferrer">
+            <h3>RepWise</h3>
+            <p>Designed and developed a React Native app generating personalized AI workout plans via Gemini API based on user history and goals. Integrated Supabase for backend, enabling secure workout history storage and retrieval with data validation.</p>
+          </a>
+
+          <!-- SpotifyTracker -->
+          <a href="https://github.com/vik-srinivasan/SpotifyTracker" class="card" target="_blank" rel="noopener noreferrer">
+            <h3>SpotifyTracker</h3>
+            <p>Built a React Native app using Spotify Web API to display users’ top tracks and artists across customizable time ranges.</p>
+          </a>
+
+          <!-- Audio Feedback Research Project -->
+          <a href="https://github.com/vik-srinivasan/Audio-Feedback" class="card" target="_blank" rel="noopener noreferrer">
+            <h3>Audio Feedback Research Project</h3>
+            <p>Developed a voice dictation tool with named entity recognition and real-time error correction to enhance transcription accuracy for blind and low-vision users. Integrated Google Web Speech API for speech-to-text and Gemini API for proper noun detection; conducted a user study and authored a research paper on findings.</p>
+          </a>
+
+          <!-- Multilingual Narrative Detection -->
+          <a href="https://github.com/vik-srinivasan/MultiNarDetection" class="card" target="_blank" rel="noopener noreferrer">
+            <h3>Multilingual Narrative Detection with XLM-R</h3>
+            <p>Developed a multi-task XLM-R model for concurrent named entity recognition and sentiment analysis on multilingual social media political text. Implemented a two-phase fine-tuning approach and Bayesian hyperparameter optimization, improving performance across diverse linguistic datasets.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vikram Srinivasan</p>
+  </footer>
 </body>
 </html>
