@@ -1,16 +1,18 @@
 :root {
   --primary: #007bff;
-  --dark:    #333;
-  --light:   #f4f4f4;
-  --white:   #fff;
+  --dark: #333;
+  --light: #f4f4f4;
+  --white: #fff;
 }
 
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--light);
   color: var(--dark);
   line-height: 1.6;
@@ -18,23 +20,28 @@ body {
 
 header {
   position: fixed;
-  top: 0; left: 0; width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: var(--white);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 .nav-container {
-  max-width: 1200px; margin: auto;
-  display: flex; justify-content: center;
-  gap: 2rem; padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .nav-container a {
   text-decoration: none;
   color: var(--dark);
   font-weight: 700;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .nav-container a:hover {
@@ -56,11 +63,15 @@ header {
 }
 
 .about-container {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
 }
 
 .profile-pic {
-  width: 250px; height: 250px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
@@ -68,7 +79,7 @@ header {
 
 .about-text h1 {
   font-size: 2.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
@@ -88,7 +99,7 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
@@ -97,19 +108,20 @@ header {
   background: var(--white);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
-  transition: transform .3s, box-shadow .3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
-  width: 100%; height: 160px;
+  width: 100%;
+  height: 160px;
   object-fit: cover;
 }
 
@@ -120,7 +132,7 @@ header {
 
 .card p {
   margin: 0 1rem 1rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
   color: #555;
 }
 
@@ -135,7 +147,7 @@ header {
   color: var(--primary);
   font-weight: 700;
   text-decoration: none;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .contact-form {
@@ -162,7 +174,7 @@ header {
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background .2s;
+  transition: background 0.2s;
 }
 
 .contact-form button:hover {
@@ -181,7 +193,7 @@ footer {
   display: flex;
   justify-content: center;
   background: var(--white);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -192,7 +204,7 @@ footer {
   text-decoration: none;
   font-weight: 700;
   color: var(--dark);
-  transition: background .2s, color .2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .nav-container .tab:hover {
@@ -204,11 +216,9 @@ footer {
   color: var(--primary);
 }
 
-
-
 /* ─────────── Blog Post (sixers-offseason.html) ─────────── */
 .article-section .container {
-  padding: 3rem 0;                    /* vertical breathing room */
+  padding: 3rem 0; /* vertical breathing room */
 }
 
 .blog-post {
@@ -217,7 +227,7 @@ footer {
 }
 
 .blog-post h1 {
-  font-size: 2.5rem;                 /* bigger main title */
+  font-size: 2.5rem; /* bigger main title */
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -231,12 +241,12 @@ footer {
 .blog-post .post-image {
   display: block;
   max-width: 100%;
-  margin: 0 auto 2rem;               /* image + space */
+  margin: 0 auto 2rem; /* image + space */
   border-radius: 8px;
 }
 
 .blog-post p {
-  margin-bottom: 1.5rem;             /* paragraph spacing */
+  margin-bottom: 1.5rem; /* paragraph spacing */
 }
 
 /* ───────── Nested lists ───────── */
@@ -247,19 +257,19 @@ footer {
 }
 
 .blog-post ul > li {
-  font-weight: 700;                  /* treat first‐level LI as label */
-  margin-bottom: .75rem;
+  font-weight: 700; /* treat first‐level LI as label */
+  margin-bottom: 0.75rem;
 }
 
 .blog-post ul > li > ul {
   list-style: disc;
   padding-left: 1.5rem;
-  margin-top: .5rem;
-  font-weight: 400;                  /* nested items normal weight */
+  margin-top: 0.5rem;
+  font-weight: 400; /* nested items normal weight */
 }
 
 .blog-post ul ul li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ───────── Section headings ───────── */
@@ -269,10 +279,113 @@ footer {
   font-size: 1.75rem;
   color: var(--primary);
   border-bottom: 2px solid var(--light);
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Always two columns (half‐width cards) */
 .grid--2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.timeline {
+  position: relative;
+}
+.timeline-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 3px solid var(--primary);
+}
+.timeline-column {
+  flex: 1;
+  padding: 0 1rem;
+}
+/* Align content left/right */
+.timeline-column.left {
+  text-align: right;
+}
+.timeline-column.right .timeline-content {
+  text-align: left;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-date {
+  position: relative;
+  display: inline-block;
+  min-width: 50px; /* enough space for the date */
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  background: transparent;
+  text-align: right;
+  z-index: 1;
+}
+/* marker on the central line */
+.timeline-column.left .timeline-date {
+  margin-left: auto;
+  text-align: right;
+}
+.timeline-column.left .timeline-date::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  background: var(--white);
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+}
+.timeline-column.right .timeline-date {
+  margin-right: auto;
+}
+.timeline-column.right .timeline-date::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  background: var(--white);
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+}
+.timeline-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+.timeline-content h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+.timeline-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* give the timeline its own gray “card” background */
+.timeline-section {
+  background: var(--light);
+  padding: 4rem 1rem;
+}
+
+/* make sure contact is sitting on white again */
+.contact-section {
+  background: var(--white);
 }

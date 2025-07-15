@@ -1,69 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vikram Srinivasan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/styles.css" />
-</head>
-<body>
-  <header>
-    <nav class="nav-container">
-      <a href="#about" class="tab active">About</a>
-      <a href="projects/index.html" class="tab">Projects</a>
-      <a href="sports/index.html" class="tab">Sports</a>
-      <a href="#contact" class="tab">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikram Srinivasan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <a href="#about" class="tab active">About</a>
+        <a href="projects/index.html" class="tab">Projects</a>
+        <a href="sports/index.html" class="tab">Sports</a>
+        <a href="#contact" class="tab">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <!-- ABOUT -->
-    <section id="about" class="section about-section">
-      <div class="container about-container">
-        <img src="images/vik.jpeg" alt="Vikram Srinivasan" class="profile-pic" />
-        <div class="about-text">
-          <h1>Hi, I’m Vikram Srinivasan</h1>
-          <p class="tagline">Student – Engineer – Sports Nerd</p>
-          <p>
-            I'm pursuing a BS in Symbolic Systems &amp; MS in CS at Stanford, specializing in AI/ML.
-            I love building AI tools that make life easier and more accessible for everyone.
-            In my free time you'll find me knee-deep in basketball analytics or dominating my
-            fantasy football leagues.
-          </p>
-          <p class="subnote">
-            You can find all my SWE &amp; AI/ML work on my
-            <a href="projects/index.html">Projects page</a>
-            or my sports analytics projects &amp; blogs on my
-            <a href="sports/index.html">Sports page</a>.
-          </p>
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="section about-section">
+        <div class="container about-container">
+          <img
+            src="images/vik.jpeg"
+            alt="Vikram Srinivasan"
+            class="profile-pic"
+          />
+          <div class="about-text">
+            <h1>Hi, I’m Vikram Srinivasan</h1>
+            <p class="tagline">Student – Engineer – Sports Nerd</p>
+            <p>
+              I'm pursuing a BS in Symbolic Systems &amp; MS in CS at Stanford,
+              specializing in AI/ML. I love building AI tools that make life
+              easier and more accessible for everyone. In my free time you'll
+              find me knee-deep in basketball analytics or dominating my fantasy
+              football leagues.
+            </p>
+            <p class="subnote">
+              You can find all my SWE &amp; AI/ML work on my
+              <a href="projects/index.html">Projects page</a>
+              or my sports analytics projects &amp; blogs on my
+              <a href="sports/index.html">Sports page</a>.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/vikram-srin" target="_blank">LinkedIn</a>
-          <a href="src/resume.pdf" target="_blank">Resume</a>
-          <a href="https://github.com/vik-srinivasan" target="_blank">GitHub</a>
+      <!-- TIMELINES -->
+      <section id="timeline" class="section timeline-section">
+        <div class="container">
+          <div class="timeline-wrapper">
+            <!-- Education (left) -->
+            <div class="timeline-column left">
+              <h2>Education</h2>
+              <div class="timeline">
+                <!-- B.S. first -->
+                <!-- M.S. second -->
+                <div class="timeline-item">
+                  <span class="timeline-date">2025–2026</span>
+                  <div class="timeline-content">
+                    <h3>M.S. in Computer Science - Stanford University</h3>
+                    <h4>Artificial Intelligence Concentration</h4>
+                    <p>
+                      Focusing on breadth and depth in Machine Learning and AI,
+                      with emphases in NLP, computer vision, and ML algorithms.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">2021–2025</span>
+                  <div class="timeline-content">
+                    <h3>B.S. in Symbolic Systems - Stanford University</h3>
+                    <h4>Natural Language Concentration</h4>
+                    <p>
+                      Studied the connection between mind and machines, focusing
+                      on using computing to bolster accessibility.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Experience (right) -->
+            <div class="timeline-column right">
+              <h2>Work Experience</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">Summer 2025</span>
+                  <div class="timeline-content">
+                    <h3>Machine Learning Intern - CoStar</h3>
+                    <p>
+                      Built a Computer Vision model to detect and classify
+                      objects in listing photos, achieving >90% precision and
+                      recall.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">Summer 2024</span>
+                  <div class="timeline-content">
+                    <h3>Software Engineering Intern - CoStar</h3>
+                    <p>
+                      Built a Multimodal AI Search Engine for real estate
+                      listings, integrating text and image data to improve
+                      search relevance and user experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">Summer 2023</span>
+                  <div class="timeline-content">
+                    <h3>Data Analytics &amp; Insights Intern - BSE Global</h3>
+                    <p>
+                      Analyzed game and business data to generate insights and
+                      dashboards for the Brooklyn Nets and New York Liberty.
+                      Built a sentiment analysis model to analyze fan feedback
+                      from call transcripts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <form class="contact-form">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
-          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/vikram-srin" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="src/resume.pdf" target="_blank">Resume</a>
+            <a href="https://github.com/vik-srinivasan" target="_blank"
+              >GitHub</a
+            >
+          </div>
 
-  <footer>
-    <p>&copy; 2025 Vikram Srinivasan</p>
-  </footer>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xnnzqvar"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
 
-  <script src="script.js"></script>
-</body>
+            <!-- honeypot to trap bots -->
+            <input type="text" name="_gotcha" style="display: none" />
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Vikram Srinivasan</p>
+    </footer>
+  </body>
 </html>
