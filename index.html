@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vikram Srinivasan</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
       <nav class="nav-container">
-        <a href="#about" class="tab active">About</a>
-        <a href="projects/index.html" class="tab">Projects</a>
-        <a href="sports/index.html" class="tab">Sports</a>
-        <a href="#contact" class="tab">Contact</a>
+        <a href="#about" class="logo">Vikram</a>
+        <div class="nav-links">
+          <a href="#about" class="tab active">About</a>
+          <a href="projects/index.html" class="tab">Projects</a>
+          <a href="sports/index.html" class="tab">Sports</a>
+          <a href="#contact" class="tab">Contact</a>
+        </div>
       </nav>
     </header>
 
@@ -33,11 +32,16 @@
             <h1>Hi, I’m Vikram Srinivasan</h1>
             <p class="tagline">Student – Engineer – Sports Nerd</p>
             <p>
-              I'm pursuing a BS in Symbolic Systems &amp; MS in CS at Stanford,
-              specializing in AI/ML. I love building AI tools that make life
-              easier and more accessible for everyone. In my free time you'll
-              find me knee-deep in basketball analytics or dominating my fantasy
-              football leagues.
+              I'm currently pursuing a BS in Symbolic Systems and an MS in CS at Stanford,
+              where I'm diving deep into AI + Machine Learning. I'm especially passionate about Natural 
+              Language Processing and Computer Vision. What really gets me excited, though, 
+              are questions surrounding how both computer systems and humans 
+              learn and process information - and the connections between the two.
+            </p>
+            <p>
+              I love building AI tools that make life easier and more accessible for 
+              everyone. When I'm not coding or studying, you'll find me deep in 
+              basketball analytics or dominating my fantasy football leagues.
             </p>
             <p class="subnote">
               You can find all my SWE &amp; AI/ML work on my
@@ -51,77 +55,67 @@
 
       <!-- TIMELINES -->
       <section id="timeline" class="section timeline-section">
-        <div class="container">
-          <div class="timeline-wrapper">
-            <!-- Education (left) -->
-            <div class="timeline-column left">
-              <h2>Education</h2>
-              <div class="timeline">
-                <!-- B.S. first -->
-                <!-- M.S. second -->
-                <div class="timeline-item">
-                  <span class="timeline-date">2025–2026</span>
-                  <div class="timeline-content">
-                    <h3>M.S. in Computer Science - Stanford University</h3>
-                    <h4>Artificial Intelligence Concentration</h4>
-                    <p>
-                      Focusing on breadth and depth in Machine Learning and AI,
-                      with emphases in NLP, computer vision, and ML algorithms.
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">2021–2025</span>
-                  <div class="timeline-content">
-                    <h3>B.S. in Symbolic Systems - Stanford University</h3>
-                    <h4>Natural Language Concentration</h4>
-                    <p>
-                      Studied the connection between mind and machines, focusing
-                      on using computing to bolster accessibility.
-                    </p>
-                  </div>
-                </div>
+        <div class="container timeline-wrapper">
+          <div class="timeline-column left">
+            <h2>Education</h2>
+            <div class="timeline-bubble">
+              <div class="bubble-date">2025–2026</div>
+              <div class="bubble-content">
+                <h3>M.S. in Computer Science - Stanford University</h3>
+                <h4>Artificial Intelligence Concentration</h4>
+                <p>
+                  Focusing on breadth and depth in Machine Learning and AI,
+                  with emphases in NLP, Computer Vision, and ML algorithms.
+                </p>
               </div>
             </div>
+            <div class="timeline-bubble">
+              <div class="bubble-date">2021–2025</div>
+              <div class="bubble-content">
+                <h3>B.S. in Symbolic Systems - Stanford University</h3>
+                <h4>Natural Language Concentration</h4>
+                <p>
+                  Studied the connection between mind and machines, focusing
+                  on using computing to bolster accessibility.
+                </p>
+              </div>
+            </div>
+          </div>
 
-            <!-- Work Experience (right) -->
-            <div class="timeline-column right">
-              <h2>Work Experience</h2>
-              <div class="timeline">
-                <div class="timeline-item">
-                  <span class="timeline-date">Summer 2025</span>
-                  <div class="timeline-content">
-                    <h3>Machine Learning Intern - CoStar</h3>
-                    <p>
-                      Built a Computer Vision model to detect and classify
-                      objects in listing photos, achieving >90% precision and
-                      recall.
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Summer 2024</span>
-                  <div class="timeline-content">
-                    <h3>Software Engineering Intern - CoStar</h3>
-                    <p>
-                      Built a Multimodal AI Search Engine for real estate
-                      listings, integrating text and image data to improve
-                      search relevance and user experience.
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Summer 2023</span>
-                  <div class="timeline-content">
-                    <h3>Data Analytics &amp; Insights Intern - BSE Global</h3>
-                    <p>
-                      Analyzed game and business data to generate insights and
-                      dashboards for the Brooklyn Nets and New York Liberty.
-                      Built a sentiment analysis model to analyze fan feedback
-                      from call transcripts.
-                    </p>
-                  </div>
-                </div>
+          <div class="timeline-column right">
+            <h2>Work Experience</h2>
+            <div class="timeline-bubble">
+              <div class="bubble-date">Summer 2025</div>
+              <div class="bubble-content">
+                <h3>Machine Learning Intern - CoStar</h3>
+                <p>
+                  Built a Computer Vision model to detect and classify
+                  objects in listing photos, achieving >90% precision and
+                  recall.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-bubble">
+              <div class="bubble-date">Summer 2024</div>
+              <div class="bubble-content">
+                <h3>Software Engineering Intern - CoStar</h3>
+                <p>
+                  Built a Multimodal AI Search Engine for real estate
+                  listings, integrating text and image data to improve
+                  search relevance and user experience.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-bubble">
+              <div class="bubble-date">Summer 2023</div>
+              <div class="bubble-content">
+                <h3>Data Analytics &amp; Insights Intern - BSE Global</h3>
+                <p>
+                  Analyzed game and business data to generate insights and
+                  dashboards for the Brooklyn Nets and New York Liberty.
+                  Built a sentiment analysis model to analyze fan feedback
+                  from call transcripts.
+                </p>
               </div>
             </div>
           </div>
