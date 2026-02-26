@@ -4,7 +4,7 @@ export const blogPosts = [
     title: 'Take Darryn Peterson First. Period.',
     date: 'February 26, 2026',
     author: 'Vikram Srinivasan',
-    image: 'images/darryn-peterson.jpg',
+    image: 'images/dp.avif',
     excerpt: 'He\'s hurt. His stats while hurt are elite. The talent is generational. Stop overthinking this.',
   },
   {
@@ -12,7 +12,7 @@ export const blogPosts = [
     title: 'The NFL\'s Quarterback Problem Is Getting Worse',
     date: 'February 24, 2026',
     author: 'Vikram Srinivasan',
-    image: 'images/nfl-qb-salaries.jpg',
+    image: 'images/sam-drake.avif',
     excerpt: 'Massive QB contracts are crippling franchises. The evidence is clear: you win with cheap quarterbacks.',
   },
   {
@@ -20,7 +20,7 @@ export const blogPosts = [
     title: 'The Wizards Just Pulled Off the Heist of the Decade',
     date: 'February 20, 2026',
     author: 'Vikram Srinivasan',
-    image: 'images/wizards-trade.jpg',
+    image: 'images/trae-ad.webp',
     excerpt: 'Trae Young. Anthony Davis. Zero core pieces traded. This is what a masterclass rebuild looks like.',
   },
   {
