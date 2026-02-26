@@ -1,5 +1,37 @@
 export const blogPosts = [
   {
+    slug: 'march-madness-preview',
+    title: 'Your Guide to March Madness 2026',
+    date: 'February 26, 2026',
+    author: 'Vikram Srinivasan',
+    image: 'images/background.jpeg',
+    excerpt: 'The top dogs, Cinderella picks, a loaded freshman class, and bold predictions for the 2026 NCAA Tournament.',
+  },
+  {
+    slug: 'darryn-peterson',
+    title: 'Take Darryn Peterson First. Period.',
+    date: 'February 26, 2026',
+    author: 'Vikram Srinivasan',
+    image: 'images/background.jpeg',
+    excerpt: 'He\'s hurt. His stats while hurt are elite. The talent is generational. Stop overthinking this.',
+  },
+  {
+    slug: 'qb-salaries',
+    title: 'The NFL\'s Quarterback Problem Is Getting Worse',
+    date: 'February 24, 2026',
+    author: 'Vikram Srinivasan',
+    image: 'images/background.jpeg',
+    excerpt: 'Massive QB contracts are crippling franchises. The evidence is clear: you win with cheap quarterbacks.',
+  },
+  {
+    slug: 'wizards-deadline',
+    title: 'The Wizards Just Pulled Off the Heist of the Decade',
+    date: 'February 20, 2026',
+    author: 'Vikram Srinivasan',
+    image: 'images/wizards.jpg',
+    excerpt: 'Trae Young. Anthony Davis. Zero core pieces traded. This is what a masterclass rebuild looks like.',
+  },
+  {
     slug: 'wizards',
     title: 'I Love What the Wizards Are Doing',
     date: 'July 14, 2025',

@@ -1,19 +1,34 @@
-import { Suspense, lazy } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import styles from './BlogPost.module.css';
 import { blogPosts } from '../data/blogPosts';
 
-const articleComponents = {
-  wizards: lazy(() => import('../content/WizardsArticle')),
-  'sixers-offseason': lazy(() => import('../content/SixersOffseasonArticle')),
-};
+const markdownFiles = import.meta.glob('../content/*.md', {
+  query: '?raw',
+  import: 'default',
+});
 
 export default function BlogPost() {
   const { slug } = useParams();
   const post = blogPosts.find((p) => p.slug === slug);
-  const ArticleComponent = articleComponents[slug];
+  const [content, setContent] = useState('');
+  const [loading, setLoading] = useState(true);
 
-  if (!post || !ArticleComponent) {
+  useEffect(() => {
+    const key = `../content/${slug}.md`;
+    if (markdownFiles[key]) {
+      markdownFiles[key]().then((text) => {
+        setContent(text);
+        setLoading(false);
+      });
+    } else {
+      setLoading(false);
+    }
+  }, [slug]);
+
+  if (!post) {
     return (
       <div className={styles.notFound}>
         <h1>Post not found</h1>
@@ -33,15 +48,28 @@ export default function BlogPost() {
       <p className={styles.meta}>
         By {post.author} &middot; {post.date}
       </p>
-      <img
-        src={`${import.meta.env.BASE_URL}${post.image}`}
-        alt={post.title}
-        className={styles.heroImage}
-      />
+      {post.image && (
+        <img
+          src={`${import.meta.env.BASE_URL}${post.image}`}
+          alt={post.title}
+          className={styles.heroImage}
+        />
+      )}
       <div className={styles.article}>
-        <Suspense fallback={<p className={styles.loading}>Loading article...</p>}>
-          <ArticleComponent />
-        </Suspense>
+        {loading ? (
+          <p className={styles.loading}>Loading article...</p>
+        ) : (
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ node, ...props }) => (
+                <a {...props} target="_blank" rel="noopener noreferrer" />
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
+        )}
       </div>
     </div>
   );
