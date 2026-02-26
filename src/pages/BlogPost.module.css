@@ -1,0 +1,101 @@
+.page {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  padding: 80px 2rem 120px;
+}
+
+.backLink {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--color-text);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.heroImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.article {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+}
+
+.article p {
+  margin-bottom: 1.25rem;
+  color: var(--color-text);
+}
+
+.article ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.article li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.article a {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.article a:hover {
+  opacity: 0.7;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.notFound {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.notFound h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.notFound p {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 60px 1.5rem 80px;
+  }
+}
