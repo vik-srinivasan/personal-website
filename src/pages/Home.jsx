@@ -14,7 +14,7 @@ export default function Home() {
       <FadeInSection>
       <section className={styles.hero}>
         <img
-          src="/images/vik.jpeg"
+          src={`${import.meta.env.BASE_URL}images/vik.jpeg`}
           alt="Vikram Srinivasan"
           className={styles.profilePic}
         />
@@ -77,7 +77,7 @@ export default function Home() {
               LinkedIn
             </a>
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}

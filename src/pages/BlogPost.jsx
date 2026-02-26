@@ -34,7 +34,7 @@ export default function BlogPost() {
         By {post.author} &middot; {post.date}
       </p>
       <img
-        src={post.image}
+        src={`${import.meta.env.BASE_URL}${post.image}`}
         alt={post.title}
         className={styles.heroImage}
       />

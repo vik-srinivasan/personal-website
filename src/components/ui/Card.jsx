@@ -11,7 +11,7 @@ export default function Card({ title, description, href, tags, featured, image, 
       className={cardClass}
     >
       {image && (
-        <img src={image} alt={title} className={styles.cardImage} />
+        <img src={`${import.meta.env.BASE_URL}${image}`} alt={title} className={styles.cardImage} />
       )}
       {date && <p className={styles.cardDate}>{date}</p>}
       <h3 className={styles.title}>
