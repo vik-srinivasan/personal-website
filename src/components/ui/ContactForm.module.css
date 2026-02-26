@@ -9,20 +9,21 @@
 .input,
 .textarea {
   width: 100%;
-  padding: 0.75rem 0;
-  border: none;
-  border-bottom: 1px solid var(--color-border);
-  background: transparent;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg-alt);
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--color-text);
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input:focus,
 .textarea:focus {
-  border-bottom-color: var(--color-text);
+  border-color: var(--color-text);
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.06);
 }
 
 .input::placeholder,
@@ -37,23 +38,24 @@
 
 .button {
   align-self: flex-start;
-  padding: 0.75rem 2.5rem;
+  padding: 0.8rem 2.5rem;
   background: var(--color-text);
   color: var(--color-bg);
   border: none;
-  font-size: 0.9rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 .button:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
   transform: none;
 }
