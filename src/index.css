@@ -5,10 +5,20 @@
   --color-text-secondary: #6B6B6B;
   --color-accent: #1A1A1A;
   --color-border: #E8E8E8;
+  --color-accent-sports: #4A9EFF;
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Inter', sans-serif;
   --max-width: 1200px;
   --max-width-narrow: 800px;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0D1117;
+  --color-bg-alt: #161B22;
+  --color-text: #E6E6E6;
+  --color-text-secondary: #8B949E;
+  --color-accent: #4A9EFF;
+  --color-border: #30363D;
 }
 
 *, *::before, *::after {
@@ -29,6 +39,13 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] {
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 a {

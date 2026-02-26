@@ -2,19 +2,20 @@
   max-width: var(--max-width-narrow);
   margin: 0 auto;
   padding: 80px 2rem 120px;
+  min-height: 100vh;
 }
 
 .backLink {
   display: inline-block;
   font-size: 0.9rem;
-  color: var(--color-text-secondary);
+  color: var(--color-accent);
   margin-bottom: 2rem;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .backLink:hover {
-  color: var(--color-text);
+  opacity: 0.7;
 }
 
 .title {
@@ -22,6 +23,7 @@
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.15;
+  color: var(--color-text);
 }
 
 .meta {
@@ -45,6 +47,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin: 2.5rem 0 1rem;
+  color: var(--color-text);
+}
+
+.article h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  color: var(--color-text);
 }
 
 .article p {
@@ -52,7 +62,8 @@
   color: var(--color-text);
 }
 
-.article ul {
+.article ul,
+.article ol {
   margin: 1rem 0 1.5rem 1.5rem;
 }
 
@@ -62,7 +73,7 @@
 }
 
 .article a {
-  color: var(--color-text);
+  color: var(--color-accent);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -71,6 +82,19 @@
 
 .article a:hover {
   opacity: 0.7;
+}
+
+.article strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.article blockquote {
+  border-left: 3px solid var(--color-accent);
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.5rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
 }
 
 .loading {
@@ -83,6 +107,11 @@
 .notFound {
   text-align: center;
   padding: 4rem 2rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .notFound h1 {
@@ -92,6 +121,10 @@
 
 .notFound p {
   color: var(--color-text-secondary);
+}
+
+.notFound a {
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
