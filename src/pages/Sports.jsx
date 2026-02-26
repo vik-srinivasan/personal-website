@@ -24,7 +24,23 @@ export default function Sports() {
       </FadeInSection>
 
       <FadeInSection>
-        <p className={styles.subtitle}>Latest</p>
+        <p className={styles.subtitle}>Projects</p>
+        <div className={styles.projectsGrid}>
+          {sportsProjects.map((project) => (
+            <Card
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              href={project.url}
+              image={project.image}
+              date={project.date}
+            />
+          ))}
+        </div>
+      </FadeInSection>
+
+      <FadeInSection>
+        <p className={styles.subtitle} style={{ marginTop: '5rem' }}>Latest</p>
         <div className={styles.blogGrid}>
           <div className={styles.featuredPost}>
             <Link to={`/sports/${featured.slug}`} className={styles.blogCard}>
@@ -58,22 +74,6 @@ export default function Sports() {
                 <p className={styles.blogCardExcerpt}>{post.excerpt}</p>
               </div>
             </Link>
-          ))}
-        </div>
-      </FadeInSection>
-
-      <FadeInSection>
-        <p className={styles.subtitle} style={{ marginTop: '5rem' }}>Projects</p>
-        <div className={styles.projectsGrid}>
-          {sportsProjects.map((project) => (
-            <Card
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              href={project.url}
-              image={project.image}
-              date={project.date}
-            />
           ))}
         </div>
       </FadeInSection>
