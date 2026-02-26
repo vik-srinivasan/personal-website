@@ -1,16 +1,52 @@
-# React + Vite
+# Vikram Srinivasan - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio website built with React and Vite, featuring a clean minimal design with bold typography.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** with React Router for client-side routing
+- **Vite** for fast development and optimized builds
+- **CSS Modules** for scoped component styling
+- **Google Fonts** (Inter + Sora) for typography
+- **Formspree** for contact form handling
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design with mobile hamburger navigation
+- Scroll-triggered fade-in animations via Intersection Observer
+- Lazy-loaded blog post content with code splitting
+- Frosted glass navbar with backdrop blur
+- Featured project cards with inverted dark styling
+- Timeline components for education and work experience
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+  components/
+    layout/     # Navbar, Footer, ScrollToTop
+    ui/         # Card, ContactForm, FadeInSection, SectionHeading, TimelineItem
+  content/      # Blog article JSX components
+  data/         # Static data (projects, experience, education, blog posts)
+  hooks/        # Custom React hooks
+  pages/        # Route page components
+public/
+  images/       # Portfolio images
+  resume.pdf    # Resume download
+```
