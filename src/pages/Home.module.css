@@ -1,0 +1,150 @@
+.hero {
+  padding: 120px 2rem 100px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.heroText h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.heroText p {
+  margin-bottom: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.heroLinks {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.heroLinks a {
+  font-weight: 600;
+  color: var(--color-text);
+  position: relative;
+  display: inline-block;
+}
+
+.heroLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-text);
+  transition: width 0.3s ease;
+}
+
+.heroLinks a:hover::after {
+  width: 100%;
+}
+
+.timeline {
+  padding: 100px 2rem;
+  background: var(--color-bg-alt);
+}
+
+.timelineInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.timelineColumn h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  padding: 120px 2rem;
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.socialLink {
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  color: var(--color-text);
+}
+
+.socialLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-text);
+  transition: width 0.3s ease;
+}
+
+.socialLink:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 1.5rem 60px;
+    gap: 2rem;
+  }
+
+  .profilePic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .timelineInner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .timeline {
+    padding: 80px 1.5rem;
+  }
+
+  .contact {
+    padding: 80px 1.5rem;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
