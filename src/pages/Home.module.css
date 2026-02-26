@@ -80,14 +80,9 @@
 }
 
 .timelineColumn h2 {
-  font-size: 1.3rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 2px solid var(--color-text);
-  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .contact {

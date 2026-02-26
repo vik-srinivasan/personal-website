@@ -1,14 +1,29 @@
 import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const closeMenu = () => setMenuOpen(false);
 
   const linkClass = ({ isActive }) =>
     `${styles.navLink} ${isActive ? styles.navLinkActive : ''}`;
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    closeMenu();
+    if (location.pathname === '/') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -37,7 +52,7 @@ export default function Navbar() {
           <NavLink to="/sports" className={linkClass} onClick={closeMenu}>
             Sports
           </NavLink>
-          <a href="/#contact" className={styles.navLink} onClick={closeMenu}>
+          <a href="#" className={styles.navLink} onClick={handleContactClick}>
             Contact
           </a>
         </div>
