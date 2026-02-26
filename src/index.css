@@ -42,10 +42,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-[data-theme="dark"] body,
 [data-theme="dark"] {
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: #0D1117;
+  color: #E6E6E6;
+  min-height: 100vh;
 }
 
 a {
