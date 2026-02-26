@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
+      <FadeInSection>
       <section className={styles.hero}>
         <img
           src="/images/vik.jpeg"
@@ -40,6 +41,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      </FadeInSection>
 
       {/* Education & Experience */}
       <section className={styles.timeline}>
