@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Sports from './pages/Sports';
 import BlogPost from './pages/BlogPost';
+import Blog from './pages/Blog';
+import TechBlogPost from './pages/TechBlogPost';
 
 function App() {
   const location = useLocation();
@@ -19,6 +21,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<TechBlogPost />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/sports/:slug" element={<BlogPost />} />
         </Routes>

@@ -23,21 +23,20 @@ export default function Home() {
           <p className={styles.tagline}>Student &mdash; Engineer &mdash; Sports Nerd</p>
           <p>
             I recently graduated with a BS in Symbolic Systems from Stanford and am now
-            pursuing an MS in CS, where I&rsquo;m diving deep into AI + Machine Learning.
-            I&rsquo;m especially passionate about Natural Language Processing and Computer
-            Vision. What really gets me excited, though, are questions surrounding how both
-            computer systems and humans learn and process information &mdash; and the
-            connections between the two.
+            pursuing an MS in CS. Right now I&rsquo;m obsessed with finding new ways to
+            build with AI &mdash; whether that&rsquo;s shipping full-stack apps with
+            Claude Code, experimenting with agentic workflows, or just straight-up
+            token-maxxing my way through side projects. I believe the best way to
+            understand AI is to build relentlessly with it.
           </p>
           <p>
-            I love building AI tools that make life easier and more accessible for
-            everyone. When I&rsquo;m not coding or studying, you&rsquo;ll find me deep in
+            When I&rsquo;m not vibecoding or studying ML, you&rsquo;ll find me deep in
             basketball analytics or dominating my fantasy football leagues.
           </p>
           <p className={styles.heroLinks}>
-            You can find all my SWE &amp; AI/ML work on my{' '}
-            <Link to="/projects">Projects page</Link> or my sports analytics projects
-            &amp; blogs on my <Link to="/sports">Sports page</Link>.
+            Check out my latest builds on the{' '}
+            <Link to="/projects">Projects page</Link> or my sports analytics work
+            on the <Link to="/sports">Sports page</Link>.
           </p>
         </div>
       </section>

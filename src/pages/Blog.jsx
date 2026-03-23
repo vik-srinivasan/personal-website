@@ -1,49 +1,30 @@
 import { Link } from 'react-router-dom';
-import styles from './Sports.module.css';
+import styles from './Blog.module.css';
 import FadeInSection from '../components/ui/FadeInSection';
-import Card from '../components/ui/Card';
-import { sportsProjects } from '../data/sportsProjects';
-import { blogPosts } from '../data/blogPosts';
+import { techBlogPosts } from '../data/techBlogPosts';
 
-export default function Sports() {
-  const [featured, ...rest] = blogPosts;
+export default function Blog() {
+  const [featured, ...rest] = techBlogPosts;
 
   return (
     <div className={styles.page}>
       <FadeInSection>
         <div className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            The <span className={styles.heroAccent}>Film Room</span>
+            Thoughts
           </h1>
           <hr className={styles.heroDivider} />
           <p className={styles.heroSubtitle}>
-            Analysis, opinion, and deep dives on the NBA, NFL, and college
-            basketball. Written by someone who cares too much about this stuff.
+            Tech deep dives, AI experiments, and whatever else is on my mind.
           </p>
         </div>
       </FadeInSection>
 
       <FadeInSection>
-        <p className={styles.subtitle}>Projects</p>
-        <div className={styles.projectsGrid}>
-          {sportsProjects.map((project) => (
-            <Card
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              links={project.links}
-              image={project.image}
-              date={project.date}
-            />
-          ))}
-        </div>
-      </FadeInSection>
-
-      <FadeInSection>
-        <p className={styles.subtitle} style={{ marginTop: '5rem' }}>Latest</p>
+        <p className={styles.subtitle}>Latest</p>
         <div className={styles.blogGrid}>
           <div className={styles.featuredPost}>
-            <Link to={`/sports/${featured.slug}`} className={styles.blogCard}>
+            <Link to={`/blog/${featured.slug}`} className={styles.blogCard}>
               <img
                 src={`${import.meta.env.BASE_URL}${featured.image}`}
                 alt={featured.title}
@@ -60,7 +41,7 @@ export default function Sports() {
           {rest.map((post) => (
             <Link
               key={post.slug}
-              to={`/sports/${post.slug}`}
+              to={`/blog/${post.slug}`}
               className={styles.blogCard}
             >
               <img

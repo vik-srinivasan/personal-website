@@ -5,7 +5,6 @@
   border-radius: 8px;
   padding: 1.75rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: pointer;
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -64,21 +63,6 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.arrow {
-  opacity: 0;
-  transform: translateX(-4px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-size: 1.1rem;
-}
-
-.card:hover .arrow {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .description {
@@ -93,7 +77,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: auto;
+  margin-bottom: 1rem;
 }
 
 .tag {
@@ -103,4 +87,39 @@
   border-radius: 100px;
   color: var(--color-text-secondary);
   font-weight: 500;
+}
+
+.linkButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--color-text);
+  color: var(--color-bg);
+  transition: opacity 0.2s ease;
+}
+
+.linkButton:hover {
+  opacity: 0.8;
+}
+
+.linkButtonFeatured {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.linkButtonFeatured:hover {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }

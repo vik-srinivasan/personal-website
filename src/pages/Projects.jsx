@@ -20,7 +20,7 @@ export default function Projects() {
               key={project.id}
               title={project.title}
               description={project.description}
-              href={project.url}
+              links={project.links}
               tags={project.tags}
               featured
             />
@@ -36,7 +36,7 @@ export default function Projects() {
               key={project.id}
               title={project.title}
               description={project.description}
-              href={project.url}
+              links={project.links}
               tags={project.tags}
             />
           ))}
