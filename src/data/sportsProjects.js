@@ -10,8 +10,8 @@ export const sportsProjects = [
     date: 'March 2026',
   },
   {
-    title: 'Fantasy Draft App',
-    description: 'A live fantasy football drafting tool providing customized rankings and live updates in an easy to use format.',
+    title: 'Fantasy Draft Companion',
+    description: 'Draft night is chaos — 30 seconds on the clock, everyone\'s shouting, and you\'re scrolling through five tabs. This gives you one clean screen with live ADP rankings, positional scarcity alerts, and pick recommendations that update as the draft unfolds. Built it because I was tired of losing drafts to guys with worse football knowledge but better spreadsheets.',
     links: [
       { label: 'GitHub', url: 'https://github.com/vik-srinivasan/fantasy-draft-app' },
     ],

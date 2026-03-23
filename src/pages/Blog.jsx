@@ -11,11 +11,11 @@ export default function Blog() {
       <FadeInSection>
         <div className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Thoughts
+            Writing
           </h1>
           <hr className={styles.heroDivider} />
           <p className={styles.heroSubtitle}>
-            Tech deep dives, AI experiments, and whatever else is on my mind.
+            Tech deep dives, AI experiments, and whatever else I&rsquo;m thinking about.
           </p>
         </div>
       </FadeInSection>

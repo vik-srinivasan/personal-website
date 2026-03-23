@@ -13,12 +13,13 @@ export default function Sports() {
       <FadeInSection>
         <div className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            The <span className={styles.heroAccent}>Film Room</span>
+            Sports Thoughts
           </h1>
           <hr className={styles.heroDivider} />
           <p className={styles.heroSubtitle}>
-            Analysis, opinion, and deep dives on the NBA, NFL, and college
-            basketball. Written by someone who cares too much about this stuff.
+            This is where I write about sports as both a fan and a builder.
+            Some of it&rsquo;s analysis, some of it&rsquo;s opinion, and most of it
+            is me caring way too much about things that don&rsquo;t matter.
           </p>
         </div>
       </FadeInSection>

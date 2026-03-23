@@ -1,6 +1,6 @@
 export const experience = [
   {
-    date: 'Winter 2025\u20132026',
+    date: 'Winter 2026',
     title: 'Member of Technical Staff Intern',
     subtitle: 'Cartesia AI',
     description: 'Building the entire engineering approach to GTM, including data science and ML systems to find leads and drive go-to-market strategy.'
