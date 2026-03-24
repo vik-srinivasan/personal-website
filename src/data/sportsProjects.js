@@ -1,5 +1,23 @@
 export const sportsProjects = [
   {
+    title: 'Fantasy Newsletter',
+    description: 'A daily AI-powered email newsletter for my fantasy basketball league. Pulls live NBA scores, player news, and rest-of-season rankings, then uses Claude to generate personalized start/sit advice, waiver wire picks, and trade recommendations for every team.',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/vik-srinivasan/fantasy-newsletter' },
+    ],
+    image: 'images/ff-newsletter.png',
+    date: 'March 2026',
+  },
+  {
+    title: 'FF Draft Analyst',
+    description: 'A Chrome extension that overlays on fantasy football draft sites with a real-time sidebar — best available board, tier countdowns, scarcity alerts, value picks, position run detection, live draft grades, and an AI player Q&A powered by Claude. Built it so I\'d never have to alt-tab during a draft again.',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/vik-srinivasan/ff-browser-extension' },
+    ],
+    image: 'images/ff-extension.png',
+    date: 'March 2026',
+  },
+  {
     title: 'Bracket App',
     description: 'A March Madness bracket tool with detailed analytics for every matchup. View team stats, seed history, and use AI-powered predictions to help fill out your bracket.',
     links: [
