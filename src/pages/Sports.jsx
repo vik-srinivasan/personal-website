@@ -41,7 +41,7 @@ export default function Sports() {
       </FadeInSection>
 
       <FadeInSection>
-        <p className={styles.subtitle} style={{ marginTop: '5rem' }}>Latest</p>
+        <p className={styles.subtitle} style={{ marginTop: '5rem' }}>Writing</p>
         <div className={styles.blogGrid}>
           <div className={styles.featuredPost}>
             <Link to={`/sports/${featured.slug}`} className={styles.blogCard}>
