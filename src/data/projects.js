@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: 'school-assistant',
+    title: 'School Assistant',
+    description: 'A full-stack academic dashboard that keeps everything in one place — tasks, calendar, courses, grades, a study timer, and an AI chat. Built with Next.js and Supabase, with a Notion-inspired design. Basically the tool I wished I had for the last four years of college.',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/vik-srinivasan/school-assistant' },
+    ],
+    tags: ['Next.js', 'Supabase', 'Claude AI', 'TypeScript'],
+    featured: true,
+  },
+  {
     id: 'ai-job-app-assistant',
     title: 'AI Job Application Assistant',
     description: 'Paste a job posting and get back a tailored resume and cover letter in seconds. Maintains a structured knowledge base of my work experience and iteratively refines output through chat. Built to eliminate the most tedious part of job hunting.',
@@ -27,7 +37,7 @@ export const projects = [
       { label: 'GitHub', url: 'https://github.com/vik-srinivasan/mock-interview-simulator' },
     ],
     tags: ['React', 'Claude AI', 'Vite'],
-    featured: true,
+    featured: false,
   },
   {
     id: 'choose-adventure',
