@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: 'viktown',
+    title: 'Viktown',
+    description: 'A local multi-agent orchestration system. Six specialized AI agents — Captain, Scout, Engineer, Tester, Reviewer, and Git — collaborate in a shared git worktree to plan, build, test, review, and ship pull requests from a single command.',
+    links: [
+      { label: 'Docs', url: 'https://docs-olive-eight-29.vercel.app/' },
+      { label: 'GitHub', url: 'https://github.com/vik-srinivasan/viktown' },
+    ],
+    tags: ['Multi-Agent', 'Claude', 'Node.js', 'React', 'Git Worktrees'],
+    featured: true,
+  },
+  {
     id: 'school-assistant',
     title: 'School Assistant',
     description: 'A full-stack academic dashboard that keeps everything in one place — tasks, calendar, courses, grades, a study timer, and an AI chat. Built with Next.js and Supabase, with a Notion-inspired design. Basically the tool I wished I had for the last four years of college.',

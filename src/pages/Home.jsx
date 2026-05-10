@@ -73,6 +73,13 @@ export default function Home() {
             <div className={styles.statusItem}>
               <span className={styles.statusDot + ' ' + styles.statusActive} />
               <div>
+                <span className={styles.statusLabel}>Viktown</span>
+                <span className={styles.statusDesc}>&mdash; a local multi-agent dev team that ships PRs from one command</span>
+              </div>
+            </div>
+            <div className={styles.statusItem}>
+              <span className={styles.statusDot + ' ' + styles.statusActive} />
+              <div>
                 <span className={styles.statusLabel}>&ldquo;Sixth Man&rdquo; AI Assistant</span>
                 <span className={styles.statusDesc}>&mdash; personal AI tool, safer and more tailored than OpenClaw</span>
               </div>
