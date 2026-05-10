@@ -44,10 +44,8 @@
   letter-spacing: 0.05em;
 }
 
-.featuredGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+.featuredBanner {
+  display: block;
   margin-bottom: 4rem;
 }
 
@@ -58,10 +56,6 @@
 }
 
 @media (max-width: 900px) {
-  .featuredGrid {
-    grid-template-columns: 1fr;
-  }
-
   .allGrid {
     grid-template-columns: 1fr;
   }

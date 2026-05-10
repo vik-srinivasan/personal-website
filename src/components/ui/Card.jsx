@@ -1,7 +1,7 @@
 import styles from './Card.module.css';
 
-export default function Card({ title, description, links, tags, featured, image, date }) {
-  const cardClass = `${styles.card} ${featured ? styles.cardFeatured : ''}`;
+export default function Card({ title, description, links, tags, featured, image, date, banner }) {
+  const cardClass = `${styles.card} ${featured ? styles.cardFeatured : ''} ${banner ? styles.cardBanner : ''}`;
 
   return (
     <div className={cardClass}>

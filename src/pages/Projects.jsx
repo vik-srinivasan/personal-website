@@ -22,7 +22,7 @@ export default function Projects() {
 
       <FadeInSection>
         <p className={styles.subtitle}>Featured</p>
-        <div className={styles.featuredGrid}>
+        <div className={styles.featuredBanner}>
           {featured.map((project) => (
             <Card
               key={project.id}
@@ -31,6 +31,7 @@ export default function Projects() {
               links={project.links}
               tags={project.tags}
               featured
+              banner
             />
           ))}
         </div>

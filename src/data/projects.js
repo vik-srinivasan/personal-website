@@ -18,7 +18,7 @@ export const projects = [
       { label: 'GitHub', url: 'https://github.com/vik-srinivasan/school-assistant' },
     ],
     tags: ['Next.js', 'Supabase', 'Claude AI', 'TypeScript'],
-    featured: true,
+    featured: false,
   },
   {
     id: 'ai-job-app-assistant',
@@ -28,17 +28,7 @@ export const projects = [
       { label: 'GitHub', url: 'https://github.com/vik-srinivasan/AI-job-app-assistant' },
     ],
     tags: ['AI', 'Python', 'Claude'],
-    featured: true,
-  },
-  {
-    id: 'ai-arcade',
-    title: 'AI Arcade',
-    description: 'Ever wanted to trash-talk an AI while playing Connect Four? Three classic games — Connect Four, Tic Tac Toe, and 20 Questions — all played against Claude, wrapped in a retro arcade UI with neon accents.',
-    links: [
-      { label: 'GitHub', url: 'https://github.com/vik-srinivasan/ai-arcade' },
-    ],
-    tags: ['React', 'Claude AI', 'Vite'],
-    featured: true,
+    featured: false,
   },
   {
     id: 'mock-interview',
