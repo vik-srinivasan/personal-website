@@ -4,7 +4,7 @@ export const projects = [
     title: 'my-team',
     description: 'A local multi-agent orchestration system. Six specialized AI agents — Captain, Scout, Engineer, Tester, Reviewer, and Git — collaborate in a shared git worktree to plan, build, test, review, and ship pull requests from a single command.',
     links: [
-      { label: 'Docs', url: 'https://landing-eosin-mu.vercel.app' },
+      { label: 'Docs', url: 'https://docs-olive-eight-29.vercel.app/' },
       { label: 'GitHub', url: 'https://github.com/vik-srinivasan/my-team' },
     ],
     tags: ['Multi-Agent', 'Claude', 'Node.js', 'React', 'Git Worktrees'],
