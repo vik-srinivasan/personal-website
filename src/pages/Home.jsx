@@ -73,7 +73,7 @@ export default function Home() {
             <div className={styles.statusItem}>
               <span className={styles.statusDot + ' ' + styles.statusActive} />
               <div>
-                <span className={styles.statusLabel}>Viktown</span>
+                <span className={styles.statusLabel}>my-team</span>
                 <span className={styles.statusDesc}>&mdash; a local multi-agent dev team that ships PRs from one command</span>
               </div>
             </div>
